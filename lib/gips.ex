@@ -31,8 +31,8 @@ defmodule Gips.CLI do
     end
 
     defp set_url_in_ghost_inspector(url) do
-      API_KEY = System.get_env("GHOST_INSPECTOR_API_KEY")
-      HTTPotion.get("https://api.ghostinspector.com/v1/suites/582f46a850dd93ae23078487/execute/?apiKey=#{API_KEY}&subdomain=#{url}", [timeout: 10_000])
+      response = HTTPotion.get("https://api.ghostinspector.com/v1/suites/582f46a850dd93ae23078487/execute/?apiKey=#{System.get_env("GHOST_INSPECTOR_API_KEY")}&subdomain=#{url}", [timeout: 10_000])
+      response
     end
 
     def main(args \\ []) do
