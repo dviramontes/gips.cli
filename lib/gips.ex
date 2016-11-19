@@ -16,14 +16,11 @@ defmodule Gips.CLI do
 
     defp parse_args(args) do
          {_, word, _} = args
-         |> OptionParser.parse(switches: [upcase: :boolean])
+                         |> OptionParser.parse(switches: [upcase: :boolean])
          List.to_string(word)
     end
 
-    defp just_the_url(line)do
-        "==> default: URL: " <> url = line
-        url
-    end
+    defp just_the_url("==> default: URL: " <> url), do: url
 
     def main(args \\ []) do
         args
