@@ -1,6 +1,10 @@
 # Gips
 
-**TODO: Add description**
+**GHOST INSPECTOR POST SUBDOMAIN UTILITY**
+
+## Building Executable
+
+- `mix escript.build`
 
 ## Installation
 
