@@ -1,0 +1,14 @@
+==> default: Detecting network information for machine...
+    default: Local machine address: 192.168.50.4
+    default: Local HTTP port: 80
+    default: Local HTTPS port: disabled
+==> default: Checking authentication and authorization...
+==> default: Creating Vagrant Share session...
+    default: Share will be at: bad-warthog-1353
+==> default: Your Vagrant Share is running! Name: bad-warthog-1353
+==> default: URL: http://bad-warthog-1353.vagrantshare.com
+
+
+
+
+
